@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Simple Password Generator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Simple Password Generator</h1>
+        <div class="options-container">
+            <div class="length-container">
+                <label class="label" for="length">Choose the password length</label>
+                <input type="number" id="length" min="1" max="30" value="10" class="number-inp">
+            </div>
+            <div class="special-charters-container">
+                <label class="label" for="special-c">Include special characters</label>
+                <input class="checkbox" type="checkbox" id="special-c">
+            </div>
+        </div>
+        <div class="password-container">
+            <input type="text" id="password" readonly class="password-inp">
+            <button class="generate-btn" onclick="generatePassword()">Generate</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
